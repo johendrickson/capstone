@@ -107,7 +107,10 @@ Based on the plant’s custom watering schedule, users receive reminders to wate
 |--|--|--|--|--|
 |`id`|`int`|n|PK|
 |`name`|`text`|n||
-|`email`|`text`/`email`(?)|n||
+|`email`|`text`/`email`(?)|n|
+|`location_name`|`text`|n|
+|`latitude`|`float`|y|
+|`longitude`|`float`|y|||
 
 ### `plants` table
 
