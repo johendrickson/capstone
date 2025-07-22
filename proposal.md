@@ -120,6 +120,7 @@ Based on the plant’s custom watering schedule, users receive reminders to wate
 |`preferred_soil_conditions`|`text`|y||AI-autofilled|
 |`propogation_methods`|`text`|y|||
 |`edible_parts`|`text`|y|||
+|`is_pet_safe`|`boolean`|y|||
 
 ### `user_plants` table
 
