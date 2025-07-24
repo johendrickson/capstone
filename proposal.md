@@ -70,7 +70,7 @@ Web app
 
 - Frontend: Render
 - Backend: Render
-- Database: Vercel
+- Database: Supabase
 
 ## Wireframes
 
