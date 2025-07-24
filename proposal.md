@@ -26,6 +26,7 @@ Individual
   - practice schemas
 - process
   - deployment
+- Location-based data processing
 
 ### Project Description
 
@@ -54,8 +55,9 @@ Web app
 ### Additional Back-end
 
 - SMTP
-- Weather API
-- scheduling library(?)
+- OpenWeather API
+- LocationIQ API
+- scheduling library(e.g. cron)
 
 ### Other
 
@@ -63,8 +65,8 @@ Web app
 
 ### Database
 
-- PostgreSQL
-- TODO (ORM – Sequelize?)
+- PostgreSQL (intially local)
+- Supabase (deployed)
 
 ### Deployment
 
@@ -99,6 +101,11 @@ Based on the plant’s custom watering schedule, users receive reminders to wate
   - If multiple plants need watered on the same day, they will all be sent in a single "digest" e-mail
   - User can change how often they want any plant watered (by days)
 
+- Zip Code to Location Conversion -
+When users sign up, they will enter their ZIP code.
+  - The ZIP code is automatically converted to latitude and longitude using the LocationIQ API.
+  - Coordinates are stored in the database and used for weather forecasting.
+    
 ## Schema
 
 ### `users` table
@@ -109,8 +116,8 @@ Based on the plant’s custom watering schedule, users receive reminders to wate
 |`name`|`text`|n||
 |`email`|`text`/`email`(?)|n|
 |`location_name`|`text`|n|
-|`latitude`|`float`|y|
-|`longitude`|`float`|y|||
+|`latitude`|`float`|n| | derived from zip code |
+|`longitude`|`float`|n| | derived from zip code |
 
 ### `plants` table
 
@@ -141,7 +148,7 @@ Based on the plant’s custom watering schedule, users receive reminders to wate
 |--|--|--|--|--|
 |`id`|`int`|n|PK||
 |`user_plant_id`|`int`|n|FK||
-|`frequency_in_days`|`int`|n|||
+|`frequency_in_days`|`int`|n||Customizable per user|
 
 ### `watering_records` table
 
