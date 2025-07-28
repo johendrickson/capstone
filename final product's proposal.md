@@ -87,12 +87,12 @@ Wireframes link: https://drive.google.com/file/d/1iO4pV2vMbS6Teh7Acsd-Sk8-RPpR5n
 Users can manage (CRUD) plants with details like name, species, watering frequency, location (inside/outside), and notes.
   - See My Plants: view of all plants
   - once plant name entered, automatic entry by AI of some data points: Scientific name, preferred Soil Conditions, edible or not, etc.
-  - | Action                                | Backend Behavior                                                                                          | Frontend Behavior                                  |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| User submits only common_name        | Call Gemini with common name; return AI data merged with user data (user data wins) + flag show_ai_info_popup if first time | Show popup modal on first add; save flag that popup was shown |
-| User submits common_name + scientific_name | Call Gemini with both names to get improved info; merge and save                                        | No popup, but show AI message at bottom           |
-| User edits plant later               | Normal PUT route; can overwrite any field                                                               |                                                  |
 
+  | Action                                 | Backend Behavior                                                                                          | Frontend Behavior                                      |
+  |--------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+  | User submits only common_name         | Call Gemini with common name; return AI data merged with user data (user data wins) + flag show_ai_info_popup if first time | Show popup modal on first add; save flag that popup was shown |
+  | User submits common_name + scientific_name | Call Gemini with both names to get improved info; merge and save                                        | No popup, but show AI message at bottom                 |
+  | User edits plant later                | Normal PUT route; can overwrite any field                                                               |                                                        |
 
 - Weather-Aware Alerts –
 Users will be notified by e-mail on the morning of a day with forecasted frost, cold snap, heat wave, or dry heat spell, prompting protective action (e.g., watering or bringing plants inside).
