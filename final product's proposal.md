@@ -57,7 +57,8 @@ Web app
 - SMTP
 - OpenWeather API
 - LocationIQ API
-- scheduling library(e.g. cron)
+- Git Actions workflow
+- scheduling library
 
 ### Other
 
