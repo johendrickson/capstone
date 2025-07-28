@@ -90,9 +90,8 @@ Users can manage (CRUD) plants with details like name, species, watering frequen
 
   | Action                                 | Backend Behavior                                                                                          | Frontend Behavior                                      |
   |--------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-  | User submits only common_name         | Call Gemini with common name; return AI data merged with user data (user data wins) + flag show_ai_info_popup if first time | Show popup modal on first add; save flag that popup was shown |
-  | User submits common_name + scientific_name | Call Gemini with both names to get improved info; merge and save                                        | No popup, but show AI message at bottom                 |
-  | User edits plant later                | Normal PUT route; can overwrite any field                                                               |                                                        |
+  | User submits scientific_name         | Saves the result of the frontend's "save" POST request | After scientific name typed, makes request to Gemini to auto-fill plant details into the frontend form. make another request to Google image search, scrape first image result URL from response. the only way to edit the rest of the form's fields is to re-type another scientific name. persistent banner warning people of AI usage and encouraging diligence, "Plant Pal uses AI to make adding plants faster, but we recommend checking the generated info for accuracy" |
+  | User edits plant later                | Normal PUT route; can overwrite any field.                                                               | Still has the persistent banner.                                                         |
 
 - Weather-Aware Alerts –
 Users will be notified by e-mail on the morning of a day with forecasted frost, cold snap, heat wave, or dry heat spell, prompting protective action (e.g., watering or bringing plants inside).
