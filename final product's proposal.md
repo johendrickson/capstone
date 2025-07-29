@@ -130,13 +130,14 @@ When users sign up, they will enter their ZIP code.
 |column|type|null|id|note|
 |--|--|--|--|--|
 |`id`|`int`|n|PK||
-|`common_name`|`text`|n|||
 |`scientific_name`|`text`|n|||
+|`common_name`|`text`|y|||
 |`species`|`text`|y|||
 |`preferred_soil_conditions`|`text`|y||AI-autofilled|
 |`propogation_methods`|`text`|y|||
 |`edible_parts`|`text`|y|||
 |`is_pet_safe`|`boolean`|y|||
+|`plant_url`|`text`|y|||
 
 ### `user_plants` table
 
