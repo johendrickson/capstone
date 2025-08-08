@@ -6,8 +6,8 @@ Plant Pal is an application designed to help plant enthusiasts manage their indo
 [backend repo
 ](https://github.com/johendrickson/capstone-backend)
 
-[frontend repo]
-(https://github.com/johendrickson/capstone-frontend)
+[frontend repo
+](https://github.com/johendrickson/capstone-frontend)
 
 ## Features
 
