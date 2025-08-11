@@ -45,7 +45,6 @@ Web app
 
 ### Additional Front-end
 
-- d3.js (Not MVP)
 - ReactRouter
 
 ### Main Back-end
@@ -57,6 +56,7 @@ Web app
 - SMTP
 - OpenWeather API
 - LocationIQ API
+- Google Gemini AI API
 - Git Actions workflow
 - scheduling library
 
@@ -77,7 +77,7 @@ Web app
 
 ## Wireframes
 
-Wireframes link: https://drive.google.com/file/d/1iO4pV2vMbS6Teh7Acsd-Sk8-RPpR5ngF/view?usp=sharing
+[Wireframes](https://drive.google.com/file/d/1iO4pV2vMbS6Teh7Acsd-Sk8-RPpR5ngF/view?usp=sharing)
 
 ## Feature Set
 
