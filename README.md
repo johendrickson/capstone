@@ -3,8 +3,8 @@
 Plant Pal is a full-stack web application that helps users track and care for their plants.  
 It combines AI-generated plant information, location-based weather alerts, and customizable watering reminders into one tool.
 
-- **Frontend Repo:** [link-to-frontend-repo](https://github.com/johendrickson/capstone-frontend)
-- **Backend Repo:** [link-to-backend-repo](https://github.com/johendrickson/capstone-backend)
+- **Frontend Repository:** [Plant Pal Frontend – React + TypeScript interface](https://github.com/johendrickson/capstone-frontend)
+- **Backend Repository:** [Plant Pal Backend – Flask API and database services](https://github.com/johendrickson/capstone-backend)
 
 ---
 
