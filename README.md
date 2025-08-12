@@ -62,7 +62,7 @@ Key capabilities:
 <div align="center">
 
 [View initial wireframes](https://drive.google.com/file/d/1iO4pV2vMbS6Teh7Acsd-Sk8-RPpR5ngF/view?usp=sharing)  
-[Visuals of the final product](https://drive.google.com/file/d/1YUieZWcREzfVYpxaVq3qj9S3vcOkVY8a/view?usp=sharing)  
+[Visuals of the final product](https://drive.google.com/drive/folders/1XVHepADxldqdq65OJZPVia1a2eWTYcla?usp=drive_link)  
 
 <img width="787" height="589" alt="Plant Pal Home Page" src="https://github.com/user-attachments/assets/ab09bd79-5556-4d22-a87d-066d3faa5b13" />
 
