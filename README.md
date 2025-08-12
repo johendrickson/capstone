@@ -57,8 +57,8 @@ Key capabilities:
 
 ## 📸 Screenshots / Wireframes
 [View initial wireframes](https://drive.google.com/file/d/1iO4pV2vMbS6Teh7Acsd-Sk8-RPpR5ngF/view?usp=sharing) and [visuals of the final product](https://drive.google.com/file/d/1YUieZWcREzfVYpxaVq3qj9S3vcOkVY8a/view?usp=sharing)
-<img width="1787" height="1089" alt="image" src="https://github.com/user-attachments/assets/ab09bd79-5556-4d22-a87d-066d3faa5b13" />
-<img width="717" height="544" alt="image" src="https://github.com/user-attachments/assets/0b4d5b62-628a-4da4-b850-45ecd7ccb1a3" />
+<img width="787" height="589" alt="Plant Pal Home Page" src="https://github.com/user-attachments/assets/ab09bd79-5556-4d22-a87d-066d3faa5b13" />
+<img width="717" height="544" alt="Original wireframe for Plant Pal homepage" src="https://github.com/user-attachments/assets/0b4d5b62-628a-4da4-b850-45ecd7ccb1a3" />
 
 
 
