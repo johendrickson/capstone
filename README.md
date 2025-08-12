@@ -1,4 +1,4 @@
-# 🌱 Plant Pal
+#  Plant Pal 🌱
 
 Plant Pal is a full-stack web application that helps users track and care for their plants.  
 
@@ -9,7 +9,7 @@ It combines AI-generated plant information, location-based weather alerts, and c
 
 ---
 
-## 📖 Overview
+## Overview
 
 Plant Pal is designed for anyone who wants an easier way to manage indoor and outdoor plants.  
 
