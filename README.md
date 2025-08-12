@@ -1,6 +1,7 @@
 # 🌱 Plant Pal
 
 Plant Pal is a full-stack web application that helps users track and care for their plants.  
+
 It combines AI-generated plant information, location-based weather alerts, and customizable watering reminders into one tool.
 
 - **Frontend Repository:** [Plant Pal Frontend – React + TypeScript interface](https://github.com/johendrickson/capstone-frontend)
@@ -11,6 +12,7 @@ It combines AI-generated plant information, location-based weather alerts, and c
 ## 📖 Overview
 
 Plant Pal is designed for anyone who wants an easier way to manage indoor and outdoor plants.  
+
 Users can store plant details, receive email reminders for watering, and get notified about weather conditions that might harm their plants.
 
 Key capabilities:
