@@ -1,0 +1,7 @@
+[submodule "plant-pal-backend"]
+	path = plant-pal-backend
+	url = https://github.com/johendrickson/capstone-backend.git
+
+[submodule "plant-pal-frontend"]
+	path = plant-pal-frontend
+	url = https://github.com/johendrickson/capstone-frontend.git
