@@ -1,6 +1,6 @@
-#  Plant Pal 🌱
+# Plant Pal 🌱
 
-Plant Pal is a full-stack web application that helps users track and care for their plants.  
+Plant Pal is a full-stack web application that helps users track and care for their plants.
 
 It combines AI-generated plant information, location-based weather alerts, and customizable watering reminders into one tool.
 
@@ -11,7 +11,7 @@ It combines AI-generated plant information, location-based weather alerts, and c
 
 ## Overview
 
-Plant Pal is designed for anyone who wants an easier way to manage indoor and outdoor plants.  
+Plant Pal is designed for anyone who wants an easier way to manage indoor and outdoor plants.
 
 Users can store plant details, receive email reminders for watering, and get notified about weather conditions that might harm their plants.
 
@@ -36,24 +36,69 @@ Key capabilities:
 
 ## Tech Stack
 
-**Frontend**  
-- React (TypeScript)  
-- React Router  
+### Frontend
+- React (TypeScript)
+- React Router
 
-**Backend**  
-- Python (Flask)  
-- PostgreSQL (Supabase for deployment)  
-- SMTP (email notifications)  
-- LocationIQ API (geocoding)  
-- OpenWeather API (weather data)  
-- Google Gemini AI API (AI autofill)  
+### Backend
+- Python (Flask)
+- PostgreSQL (Supabase for deployment)
+- SMTP (email notifications)
+- LocationIQ API (geocoding)
+- OpenWeather API (weather data)
+- Google Gemini AI API (AI autofill)
 - Cron jobs (scheduled alerts & reminders)
-- GitHub Actions  
+- GitHub Actions
 
-**Deployment**  
-- Frontend: Render  
-- Backend: Render  
-- Database: Supabase  
+### Deployment
+- Frontend: Render
+- Backend: Render
+- Database: Supabase
+
+---
+
+## Local Development (Docker)
+
+Plant Pal can be run locally using Docker Compose, which spins up the frontend and backend together with a single command.
+
+This setup is recommended for contributors who want a consistent local environment without installing dependencies manually.
+
+### Prerequisites
+- Docker
+- Docker Compose (included with Docker Desktop)
+
+### Running the app locally
+
+From the root of the **main (capstone) repository**, run:
+
+```bash
+docker compose up --build
+```
+
+This will:
+- Build and start the Flask backend on http://localhost:5000
+- Build and serve the React frontend on http://localhost:3000
+- Connect services using Docker’s internal network
+
+Once running, open your browser and navigate to:
+
+http://localhost:3000
+
+### Environment variables
+
+- The backend reads configuration (such as database credentials and API keys) from environment variables. For more info on the needed credentials, see the [Plant Pal Backend repository](https://github.com/johendrickson/capstone-backend).
+- For local development, these can be provided via a .env file referenced in `docker-compose.yml`.
+- For deployment, environment variables are managed by the hosting platform (Render).
+
+No code changes are required to switch between local and deployed environments.
+
+### Stopping the containers
+
+To stop all running services:
+
+```bash
+docker compose down
+```
 
 ---
 
@@ -61,8 +106,8 @@ Key capabilities:
 
 <div align="center">
 
-[View initial wireframes](https://drive.google.com/file/d/1iO4pV2vMbS6Teh7Acsd-Sk8-RPpR5ngF/view?usp=sharing)  
-[Visuals of the final product](https://drive.google.com/drive/folders/1XVHepADxldqdq65OJZPVia1a2eWTYcla?usp=drive_link)  
+[View initial wireframes](https://drive.google.com/file/d/1iO4pV2vMbS6Teh7Acsd-Sk8-RPpR5ngF/view?usp=sharing)
+[Visuals of the final product](https://drive.google.com/drive/folders/1XVHepADxldqdq65OJZPVia1a2eWTYcla?usp=drive_link)
 
 <img width="787" height="589" alt="Plant Pal Home Page" src="https://github.com/user-attachments/assets/ab09bd79-5556-4d22-a87d-066d3faa5b13" />
 
@@ -73,5 +118,5 @@ Key capabilities:
 ---
 
 ## Author
-**Jamie Hendrickson**  
+**Jamie Hendrickson**
 Ada Developers Academy, Cohort 23
